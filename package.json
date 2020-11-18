@@ -87,7 +87,9 @@
     "xml2js": "^0.4.23"
   },
   "nodemonConfig": {
-    "ignore": ["dist/*"],
+    "ignore": [
+      "dist/*"
+    ],
     "ext": "ts"
   }
 }
