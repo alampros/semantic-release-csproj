@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "jsx": "react",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "lib": ["ES2020"],
+    "declaration": true,
+    "resolveJsonModule": true,
+    "outDir": "./dist",
+    "baseUrl": "src",
+    "paths": {
+      "*": [
+        "types/*",
+        "*"
+      ]
+    }
+  },
+  "include": [
+    "./**/*"
+  ],
+  "exclude": [
+    "dist"
+  ]
+}
