@@ -20,11 +20,19 @@ type TCSProjFileJSON = {
     ItemGroup?: Array<any>
   }
 }
-export async function prepare(pluginConfig: TPluginConfig, context: TSemRelContext) {
+
+export async function verify(pluginConfig: TPluginConfig, context: TSemRelContext) {
   const { projectFile } = pluginConfig
   if(!projectFile) {
     throw new Error('You must specify a projectFile option')
   }
+  const { cwd } = context
+  const csprojFilePath = path.resolve(cwd, projectFile)
+  await fs.readFile(csprojFilePath, 'utf-8')
+}
+
+export async function prepare(pluginConfig: TPluginConfig, context: TSemRelContext) {
+  const { projectFile } = pluginConfig
   const { cwd, nextRelease } = context
   const parser = new xml2js.Parser()
   const csprojFilePath = path.resolve(cwd, projectFile)
