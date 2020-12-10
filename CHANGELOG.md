@@ -1,3 +1,10 @@
+### [1.1.1](https://github.com/testoil/semantic-release-csproj/compare/v1.1.0...v1.1.1) (2020-12-10)
+
+
+### Bug Fixes
+
+* verify => verifyConditions ([b785118](https://github.com/testoil/semantic-release-csproj/commit/b7851185b2314967a0ac910645cc3a6e51bbcbb0))
+
 ## [1.1.0](https://github.com/testoil/semantic-release-csproj/compare/v1.0.0...v1.1.0) (2020-12-10)
 
 
