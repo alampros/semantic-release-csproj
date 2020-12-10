@@ -1,3 +1,15 @@
+## [1.1.0](https://github.com/testoil/semantic-release-csproj/compare/v1.0.0...v1.1.0) (2020-12-10)
+
+
+### Features
+
+* add verify stage ([4b297bc](https://github.com/testoil/semantic-release-csproj/commit/4b297bc09284481281ea56150b63faf5fda0b27e))
+
+
+### Bug Fixes
+
+* remove safeguard error ([05faa11](https://github.com/testoil/semantic-release-csproj/commit/05faa1197d47073904a6f1f76a30c9065661f012))
+
 ## 1.0.0 (2020-11-18)
 
 
