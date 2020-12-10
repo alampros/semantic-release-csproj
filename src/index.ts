@@ -34,7 +34,6 @@ export async function prepare(pluginConfig: TPluginConfig, context: TSemRelConte
   const builder = new xml2js.Builder()
   const xml = builder.buildObject(modified)
   await fs.writeFile(csprojFilePath, xml)
-  throw new Error('Nope.')
 }
 
 async function modifyVersionNode(xmlDoc: TCSProjFileJSON, nextVersion: string): Promise<TCSProjFileJSON> {
