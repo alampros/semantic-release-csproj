@@ -21,7 +21,7 @@ type TCSProjFileJSON = {
   }
 }
 
-export async function verify(pluginConfig: TPluginConfig, context: TSemRelContext) {
+export async function verifyConditions(pluginConfig: TPluginConfig, context: TSemRelContext) {
   const { projectFile } = pluginConfig
   if(!projectFile) {
     throw new Error('You must specify a projectFile option')
